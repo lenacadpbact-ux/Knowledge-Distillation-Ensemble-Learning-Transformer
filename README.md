@@ -39,9 +39,9 @@ This project investigates **Knowledge Distillation (KD)** comparing two teacher 
 | LSTM Teacher (DL Ensemble) | 73.28 | KD framework ✓ | SST-2 dataset ✓ | — | Small gap to student | — | — |
 | TinyBERT Teacher (DL Ensemble) | 85.55 | KD framework ✓ | SST-2 dataset ✓ | < 91.06% (DistilBERT) | Medium gap to student | Teacher role vs student (93.1%) ✓ | — |
 | Ensemble Teacher (Avg of 3 DL) | 76.72 | Ensemble soft labels ✓ | SST-2 dataset ✓ | < 91.06% (DistilBERT) | Small gap to student | — | — |
-| **Student — Ensemble KD** | **75.46** | Soft targets T scaling ✓ | SST-2 test 872 samples ✓ | — | Capacity gap confirmed ✓ | — | +1.61% < 2.33% generic KD |
+| **Student — Ensemble KD** | **75.46** | Soft targets T scaling ✓ | SST-2 test 872 samples ✓ | — | Capacity gap confirmed ✓ | — | +2.52% > 2.33%  generic KD |
 | DistilBERT Teacher (Pre-trained) | 91.06 | KD framework ✓ | SST-2 dataset ✓ | 91.06% ≈ 91.3% same model ✅ | Large gap to student | — | — |
-| **Student — Transformer KD** | **76.15** | Soft targets T scaling ✓ | SST-2 test 872 samples ✓ | Distilled from DistilBERT ✓ | 25:1 gap 14.68% drop ✓ | — | +2.99% > 2.33% ✅ |
+| **Student — Transformer KD** | **76.15** | Soft targets T scaling ✓ | SST-2 test 872 samples ✓ | Distilled from DistilBERT ✓ | 25:1 gap 14.68% drop ✓ | — | +3.21% > 2.33%  ✅ |
 
 ---
 
