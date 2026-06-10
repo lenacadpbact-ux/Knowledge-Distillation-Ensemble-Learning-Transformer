@@ -18,12 +18,12 @@ This project investigates **Knowledge Distillation (KD)** comparing two teacher 
 | Model | Type | Accuracy | vs Baseline |
 |---|---|---|---|
 | DistilBERT Teacher | Pre-trained Transformer | 91.06% | — |
-| TinyBERT Teacher | Fine-tuned Transformer | 85.32% | — |
-| Ensemble Teacher (Avg) | DL Combined | 76.95% | — |
-| **Student — Transformer KD** | **Student** | **76.38%** | **+2.52% ✅** |
-| **Student — Ensemble KD** | **Student** | **75.00%** | **+3.21% ✅** |
+| TinyBERT Teacher | Fine-tuned Transformer | 85.55% | — |
+| Ensemble Teacher (Avg) | DL Combined | 76.72% | — |
+| **Student — Transformer KD** | **Student** | **76.15%** | **+2.52% ✅** |
+| **Student — Ensemble KD** | **Student** | **75.46%** | **+3.21% ✅** |
 | MLP Teacher | DL Fully Connected | 74.43% | — |
-| Baseline MLP (no KD) | Baseline | 73.39% | — |
+| Baseline MLP (no KD) | Baseline | 72.94% | — |
 | LSTM Teacher | DL Recurrent | 73.28% | — |
 
 > Both students exceed the generic KD sentiment benchmark of < 2.33% reported by Zhang et al. (2025) — without GPU or LLM resources.
