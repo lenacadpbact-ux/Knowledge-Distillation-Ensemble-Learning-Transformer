@@ -34,14 +34,14 @@ This project investigates **Knowledge Distillation (KD)** comparing two teacher 
 
 | Model | ACC (%) | Hinton et al. (2015) | Socher et al. (2013) | Sanh et al. (2019) | Mirzadeh et al. (2020) | Jiao et al. (2020) | Zhang et al. (2025) |
 |---|---|---|---|---|---|---|---|
-| Baseline MLP (No Distillation) | 73.39 | No KD applied | SST-2 dataset ✓ | — | — | — | — |
+| Baseline MLP (No Distillation) | 72.94 | No KD applied | SST-2 dataset ✓ | — | — | — | — |
 | MLP Teacher (DL Ensemble) | 74.43 | KD framework ✓ | SST-2 dataset ✓ | — | Small gap to student | — | — |
 | LSTM Teacher (DL Ensemble) | 73.28 | KD framework ✓ | SST-2 dataset ✓ | — | Small gap to student | — | — |
-| TinyBERT Teacher (DL Ensemble) | 85.32 | KD framework ✓ | SST-2 dataset ✓ | < 91.06% (DistilBERT) | Medium gap to student | Teacher role vs student (93.1%) ✓ | — |
-| Ensemble Teacher (Avg of 3 DL) | 76.95 | Ensemble soft labels ✓ | SST-2 dataset ✓ | < 91.06% (DistilBERT) | Small gap to student | — | — |
-| **Student — Ensemble KD** | **75.00** | Soft targets T scaling ✓ | SST-2 test 872 samples ✓ | — | Capacity gap confirmed ✓ | — | +1.61% < 2.33% generic KD |
+| TinyBERT Teacher (DL Ensemble) | 85.55 | KD framework ✓ | SST-2 dataset ✓ | < 91.06% (DistilBERT) | Medium gap to student | Teacher role vs student (93.1%) ✓ | — |
+| Ensemble Teacher (Avg of 3 DL) | 76.72 | Ensemble soft labels ✓ | SST-2 dataset ✓ | < 91.06% (DistilBERT) | Small gap to student | — | — |
+| **Student — Ensemble KD** | **75.46** | Soft targets T scaling ✓ | SST-2 test 872 samples ✓ | — | Capacity gap confirmed ✓ | — | +1.61% < 2.33% generic KD |
 | DistilBERT Teacher (Pre-trained) | 91.06 | KD framework ✓ | SST-2 dataset ✓ | 91.06% ≈ 91.3% same model ✅ | Large gap to student | — | — |
-| **Student — Transformer KD** | **76.38** | Soft targets T scaling ✓ | SST-2 test 872 samples ✓ | Distilled from DistilBERT ✓ | 25:1 gap 14.68% drop ✓ | — | +2.99% > 2.33% ✅ |
+| **Student — Transformer KD** | **76.15** | Soft targets T scaling ✓ | SST-2 test 872 samples ✓ | Distilled from DistilBERT ✓ | 25:1 gap 14.68% drop ✓ | — | +2.99% > 2.33% ✅ |
 
 ---
 
