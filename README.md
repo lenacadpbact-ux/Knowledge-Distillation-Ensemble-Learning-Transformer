@@ -20,8 +20,8 @@ This project investigates **Knowledge Distillation (KD)** comparing two teacher 
 | DistilBERT Teacher | Pre-trained Transformer | 91.06% | — |
 | TinyBERT Teacher | Fine-tuned Transformer | 85.55% | — |
 | Ensemble Teacher (Avg) | DL Combined | 76.72% | — |
-| **Student — Transformer KD** | **Student** | **76.15%** | **+2.52% ✅** |
-| **Student — Ensemble KD** | **Student** | **75.46%** | **+3.21% ✅** |
+| **Student — Transformer KD** | **Student** | **76.15%** | **+2.52% ** |
+| **Student — Ensemble KD** | **Student** | **75.46%** | **+3.21% ** |
 | MLP Teacher | DL Fully Connected | 74.43% | — |
 | Baseline MLP (no KD) | Baseline | 72.94% | — |
 | LSTM Teacher | DL Recurrent | 73.28% | — |
